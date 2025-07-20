@@ -15,4 +15,4 @@ jobs:
         fetch-depth: 0
 
     - name: Build the Container Image with Podman
-      run: podman build . --file Containerfile --tag nimelo-ide:$(date +%s)
+      run: podman build .
