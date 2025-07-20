@@ -1,0 +1,23 @@
+name: Container Image CI
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Podman
+      uses: containers/podman-action@v1.5.1
+      with:
+        version: 'latest'
+
+    - name: Build the Container Image with Podman
+      run: podman build . --file Containerfile --tag my-image-name:$(date +%s)
