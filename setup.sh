@@ -16,7 +16,7 @@ PACKAGES=(
 )
 
 COPR_REPOS=(
-   "atim/lazygit"
+    "atim/lazygit"
 )
 
 echo "Enabling COPR repositories: ${COPR_REPOS[@]}"
