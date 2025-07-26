@@ -8,11 +8,13 @@ set -o xtrace
 PACKAGES=(
     fd
     git
+    htop
+    lazygit
     neovim
     nnn
     ripgrep
     tmux
-    lazygit
+    rustup
 )
 
 COPR_REPOS=(
