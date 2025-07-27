@@ -14,6 +14,7 @@ PACKAGES=(
     neovim
     nnn
     ripgrep
+    rustup
     stow
     tmux
 )
