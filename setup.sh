@@ -7,6 +7,7 @@ set -o xtrace
 
 PACKAGES=(
     fd
+    flatpak-xdg-utils
     git
     htop
     lazygit
@@ -46,3 +47,8 @@ if [ $? -eq 0 ]; then
 else
     echo "Failed to install packages"
 fi
+
+echo "Link flatpak-xdg-open with xdg-open ..."
+ln -sf /usr/bin/flatpak-xdg-open /usr/bin/xdg-open
+
+echo "Done."
