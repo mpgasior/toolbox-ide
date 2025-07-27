@@ -6,6 +6,7 @@ set -o pipefail
 set -o xtrace
 
 PACKAGES=(
+    acpi
     fd
     flatpak-xdg-utils
     git
@@ -50,5 +51,8 @@ fi
 
 echo "Link flatpak-xdg-open with xdg-open ..."
 ln -sf /usr/bin/flatpak-xdg-open /usr/bin/xdg-open
+
+echo "Installing TMUX Package Manager ..."
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Done."
