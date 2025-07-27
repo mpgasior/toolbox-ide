@@ -13,8 +13,9 @@ PACKAGES=(
     neovim
     nnn
     ripgrep
+    rustup,
+    stow
     tmux
-    rustup
 )
 
 COPR_REPOS=(
