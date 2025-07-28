@@ -6,7 +6,6 @@ set -o pipefail
 set -o xtrace
 
 PACKAGES=(
-    acpi
     fd
     flatpak-xdg-utils
     git
