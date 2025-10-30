@@ -4,6 +4,7 @@ PACKAGES=(
   fd
   flatpak-xdg-utils
   git
+  go
   htop
   lazygit
   neovim
