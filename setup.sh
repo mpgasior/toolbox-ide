@@ -51,8 +51,13 @@ else
   exit 1
 fi
 
-echo "Link flatpak-xdg-open with xdg-open ..."
-ln -sf /usr/bin/flatpak-xdg-open /usr/bin/xdg-open
+echo "Configuring xdg-open to work with host..."
+if [ -f /usr/bin/flatpak-xdg-open ]; then
+  ln -sf /usr/bin/flatpak-xdg-open /usr/bin/xdg-open
+  echo "Successfully linked flatpak-xdg-open to xdg-open."
+else
+  echo "Warning: flatpak-xdg-open not found. Host xdg-open integration might not work."
+fi
 
 TPM_DIR="~/.tmux/plugins/tpm"
 if [[ -d "$TPM_DIR" ]]; then
