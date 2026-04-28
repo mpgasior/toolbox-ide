@@ -10,6 +10,7 @@ PACKAGES=(
   lazygit
   neovim
   nnn
+  node
   ripgrep
   rustup
   stow
