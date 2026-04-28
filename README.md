@@ -14,5 +14,7 @@ toolbox enter toolbox-ide
 Once inside the toolbox, run the setup script:
 
 ```bash
+git clone https://github.com/mpgasior/toolbox-ide.git
+cd toolbox-ide
 sudo ./setup.sh
 ```
