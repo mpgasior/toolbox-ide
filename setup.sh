@@ -1,12 +1,12 @@
 #!/bin/bash
 
 PACKAGES=(
+  btop
   fd
   flatpak-xdg-utils
   git
   go
   htop
-  btop
   lazygit
   neovim
   nnn
