@@ -4,6 +4,7 @@ PACKAGES=(
   btop
   fd
   flatpak-xdg-utils
+  gh
   git
   go
   htop
