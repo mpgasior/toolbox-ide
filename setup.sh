@@ -12,6 +12,7 @@ PACKAGES=(
   neovim
   nnn
   node
+  postgresql
   ripgrep
   rustup
   stow
